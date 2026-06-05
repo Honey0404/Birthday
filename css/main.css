@@ -1,0 +1,58 @@
+
+body{margin:0;font-family:Poppins,sans-serif;background:linear-gradient(135deg,#ff5e9f,#ff89b5,#ffc1d8);color:#fff;overflow:hidden}
+.page{display:none;height:100vh;justify-content:center;align-items:center;flex-direction:column;text-align:center;padding:20px}
+.active{display:flex}
+h1{font-family:'Great Vibes',cursive;font-size:4rem}
+button{padding:14px 28px;border:none;border-radius:30px;cursor:pointer;margin:8px}
+.hero{width:min(320px,80vw);border-radius:20px;box-shadow:0 15px 40px rgba(0,0,0,.25)}
+
+.memory-photo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:20px auto;
+}
+
+.memory-photo img{
+
+    width:70vw;
+    max-width:500px;
+
+    height:auto;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.25);
+
+    transition:0.4s ease;
+}
+
+.memory-photo img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.cards div,.letter{background:rgba(255,255,255,.15);backdrop-filter:blur(12px);padding:16px;border-radius:16px;margin:8px}
+.big{font-size:5rem}
+.cake{font-size:120px}
+.heart{position:absolute;animation:f 8s linear infinite}
+@keyframes f{from{transform:translateY(100vh)}to{transform:translateY(-120vh)}}
+@media(max-width:768px){h1{font-size:2.5rem}.big{font-size:3rem}.gallery img{width:140px;height:140px}}
+
+/* Music add */
+#musicBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:999;
+    border:none;
+    border-radius:30px;
+    padding:12px 20px;
+    background:white;
+    color:#ff5e9f;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}

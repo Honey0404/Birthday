@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Birthday Surprise ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+<div id="hearts"></div>
+
+<section class="page active" id="p1"><h1>A Gift For You ❤️</h1><button onclick="go(2)">Open Gift 🎁</button></section>
+<section class="page" id="p2"><h1>Happy Birthday Beautiful</h1><img class="hero" src="assets/images/cover.jpeg"><button onclick="go(3)">Continue</button></section>
+<section class="page" id="p3"><h1>Memory Gallery</h1><div class="memory-photo">
+<img src="assets/images/collage.jpg" alt="Memory">
+<!-- <img src="assets/images/photo1.jpg"><img src="assets/images/photo2.jpg"><img src="assets/images/photo3.jpg"><img src="assets/images/photo4.jpg">
+<img src="assets/images/photo5.jpg"><img src="assets/images/photo6.jpg"><img src="assets/images/photo7.jpg"><img src="assets/images/photo8.jpg"> -->
+</div><button onclick="go(4)">Next</button></section>
+<section class="page" id="p4"><h1>Reasons I Love You</h1><div class="cards"><div>❤️ Your Smile</div><div>❤️ Your Kindness</div><div>❤️ Your Heart</div><div>❤️ Everything About You</div></div><button onclick="go(5)">Next</button></section>
+<section class="page" id="p5"><h1>Letter To You 💌</h1><div class="letter"><p id="typed"></p></div><button onclick="go(6)">Next</button></section>
+<section class="page" id="p6"><h1>Make A Wish 🎂</h1><div class="cake">🎂</div><button onclick="celebrate()">Blow Candles</button><button onclick="go(7)">Finale</button></section>
+<section class="page" id="p7"><h1 class="big">Happy Birthday My Love ❤️</h1><p>If someday you ever wonder what my intentions are with you, let this be your answer:<br><br>
+
+        I never came into your life to be a temporary chapter.<br><br>
+
+        I came to stay.<br><br>
+
+        To hold your hand when life is beautiful.<br>
+        To hold it even tighter when life is difficult.<br>
+        To celebrate your happiest moments and stand beside you through your hardest ones.<br><br>
+
+        Because when I look at my future, I don't see a perfect life.<br><br>
+
+        I simply see you in it.<br><br>
+
+        And that's all I've ever wanted.<br><br>
+
+        Forever and always,<br>
+        I choose you. ❤️
+</p><button onclick="mega()">Celebrate</button></section>
+<!-- Music Add -->
+<audio id="voiceMessage">
+    <source src="assets/audio/voice_message.mp4" type="audio/mp4">
+    Your browser does not support audio.
+</audio>
+
+<audio id="bgMusic" loop>
+    <source src="assets/music/Be Intehaan.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">
+    ⏸ Pause Music
+</button>
+
+<script src="js/app.js"></script><script src="js/typing.js"></script>
+</body></html>
